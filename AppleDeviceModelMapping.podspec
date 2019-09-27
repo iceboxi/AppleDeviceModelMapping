@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AppleDeviceModelMapping'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AppleDeviceModelMapping.'
+  s.summary          = 'Mapping Appple device identify with model name.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Mapping Appple device identify with model name. Like iPhone1,1 as iPhone and iPad11,4 as iPad Air 3rd Gen and etc.
                        DESC
 
   s.homepage         = 'https://github.com/iceboxi/AppleDeviceModelMapping'
@@ -31,12 +31,15 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AppleDeviceModelMapping/Classes/**/*'
-  
+  s.swift_version = '5.0'
+
   # s.resource_bundles = {
   #   'AppleDeviceModelMapping' => ['AppleDeviceModelMapping/Assets/*.png']
   # }
 
+  s.resource = 'AppleDeviceModelMapping/Assets/DeviceModelMapping.plist'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -9,6 +9,6 @@
 import UIKit
 
 
-class AppleDevice {
-    static let modelName = UIDevice.current.modelName
+public class AppleDevice {
+    public static let modelName = UIDevice.current.modelName
 }

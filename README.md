@@ -30,6 +30,10 @@ it, simply add the following line to your Podfile:
 pod 'AppleDeviceModelMapping'
 ```
 
+## Feature
+
+1. try to scan [this site](https://everyi.com/by-identifier/ipod-iphone-ipad-specs-by-model-identifier.html) for auto-update the mapping plist
+
 ## Author
 
 iceboxi, iceboxidev@gmail.com

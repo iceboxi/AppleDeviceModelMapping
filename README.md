@@ -32,7 +32,9 @@ pod 'AppleDeviceModelMapping'
 
 ## Feature
 
-1. try to scan [this site](https://everyi.com/by-identifier/ipod-iphone-ipad-specs-by-model-identifier.html) for auto-update the mapping plist
+1. try to scan [everyi](https://everyi.com/by-identifier/ipod-iphone-ipad-specs-by-model-identifier.html) or [wiki](https://www.theiphonewiki.com/wiki/Models) for auto-update
+
+complete, you can generate a new plist when identify update in wiki with [this gist](https://gist.github.com/iceboxi/ba0d9b260a233b9fa37b2fa9f0a95967)
 
 ## Author
 

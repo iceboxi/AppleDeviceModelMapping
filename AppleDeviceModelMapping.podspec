@@ -30,7 +30,7 @@ Mapping Appple device identify with model name. Like iPhone1,1 as iPhone and iPa
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Sources/AppleDeviceModelMapping/**/*'
+  s.source_files = 'Sources/AppleDeviceModelMapping/**/*.swift'
   s.swift_version = '5.0'
 
   # s.resource_bundles = {

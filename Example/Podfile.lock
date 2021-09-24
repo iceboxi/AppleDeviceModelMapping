@@ -1,5 +1,5 @@
 PODS:
-  - AppleDeviceModelMapping (0.1.0)
+  - AppleDeviceModelMapping (0.1.6)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AppleDeviceModelMapping: 496d3bff38389c889ad23806d839e3ac94371ec2
+  AppleDeviceModelMapping: 2190b7bb407126d8c6b282678f31ff72fbcdc3af
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
@@ -40,4 +40,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f5bfe443554743c77abc643e3984d3da00b8418e
 
-COCOAPODS: 1.8.0
+COCOAPODS: 1.11.2

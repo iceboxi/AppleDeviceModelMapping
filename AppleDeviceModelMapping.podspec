@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppleDeviceModelMapping'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Mapping Appple device identify with model name.'
 
 # This description is used to generate tags and improve search results.
@@ -30,14 +30,14 @@ Mapping Appple device identify with model name. Like iPhone1,1 as iPhone and iPa
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'AppleDeviceModelMapping/Classes/**/*'
+  s.source_files = 'Sources/AppleDeviceModelMapping/**/*'
   s.swift_version = '5.0'
 
   # s.resource_bundles = {
   #   'AppleDeviceModelMapping' => ['AppleDeviceModelMapping/Assets/*.png']
   # }
 
-  s.resource = 'AppleDeviceModelMapping/Assets/DeviceModelMapping.plist'
+  s.resource = 'Sources/AppleDeviceModelMapping/Resource/DeviceModelMapping.plist'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'

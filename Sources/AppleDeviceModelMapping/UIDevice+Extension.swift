@@ -19,9 +19,32 @@ public extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
-        guard let filePath = Bundle(for: AppleDevice.self).path(forResource: "DeviceModelMapping", ofType: "plist") else { return identifier }
+        guard let filePath = Bundle.myModule.path(forResource: "DeviceModelMapping", ofType: "plist") else { return identifier }
         guard let modelList = NSDictionary(contentsOfFile: filePath) else { return identifier }
   
         return (modelList.value(forKey: identifier) as? String) ?? identifier
     }
+}
+
+import class Foundation.Bundle
+
+fileprivate extension Foundation.Bundle {
+    /// Returns the resource bundle associated with the current Swift module.
+    static var myModule: Bundle = {
+        let bundleName = "AppleDeviceModelMapping_AppleDeviceModelMapping"
+
+        let candidates = [
+            Bundle.main.resourceURL,
+            Bundle(for: AppleDevice.self).resourceURL,
+            Bundle.main.bundleURL,
+        ]
+
+        for candidate in candidates {
+            let bundlePath = candidate?.appendingPathComponent(bundleName + ".bundle")
+            if let bundle = bundlePath.flatMap(Bundle.init(url:)) {
+                return bundle
+            }
+        }
+        fatalError("unable to find bundle named TUScanner_TUScanner")
+    }()
 }
